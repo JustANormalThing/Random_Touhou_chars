@@ -37,8 +37,8 @@ int main(void)
         {"Alice Margatroid","Imgs/Aris.png"},
         {"Lily White",          "Happy.png"},
         {"Lunasa Prismriver","Prism.png"},
-        {"Merlin Prismriver","Prism2.png"},
-        {"Lyrica Prismriver","Lyrica.png"}
+        {"Merlin Prismriver","Img/Prism2.png"},
+        {"Lyrica Prismriver","Img/Lyrica.png"}
 
     };
 
