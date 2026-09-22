@@ -17,6 +17,8 @@ gcc Dino.c -o Dino.exe -I"C:\Users\Admin\Desktop\NEWTEST\SMALL_PROJECT\SDL3-3.4.
 ```
 This shoud be in one line.
 
+If this does not work, try using differnt  sdl3 mingw version.
+
 ## Credit
 Art by:
 Koakuma by hanahello
