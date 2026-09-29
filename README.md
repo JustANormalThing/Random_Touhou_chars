@@ -24,6 +24,7 @@ If code does not work, make a bug report.
 ## Credit
 Art by:
 Koakuma by hanahello
+
 Daiyousei (Daiyōsei) - Touhou - Image by NIMA
 
 Big credit for SDL for making this possible
