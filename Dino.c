@@ -5,7 +5,7 @@
 #include <SDL3/SDL.h>
 #include <SDL3_image/SDL_image.h>
 
-#define NUM_CHARACTERS 18
+#define NUM_CHARACTERS  31
 
 typedef struct {
     const char *name;
@@ -32,13 +32,25 @@ int main(void)
         {"Sakuya Izayoi", "Imgs/Knife.png"},
         {"Remillia Scarlet","Imgs/Remi.png"},
         {"Flandre Scarlet","Imgs/TasyFoodName.png"},
-        {"Letty Whiterock","Imgs/TasyFoodName.png"},
+        {"Letty Whiterock","Imgs/WinterOne.png"},
         {"Chen","Imgs/Cat.png"},
         {"Alice Margatroid","Imgs/Aris.png"},
-        {"Lily White",          "Imgs/Happy.png"},
+        {"Lily White","Imgs/Happy.png"},
         {"Lunasa Prismriver","Imgs/Prism.png"},
         {"Merlin Prismriver","Img/Prism2.png"},
-        {"Lyrica Prismriver","Img/Lyrica.png"}
+        {"Lyrica Prismriver","Img/Lyrica.png"},
+        {"Youmu Konpaku","Img/SwordHappyShortOne.png"},
+        {"Yuyuko Saigyouji","Img/Eat.png"},
+        {"Ran Yakumo","Img/Fox.png"},
+        {"Yukari Yakumo","Img/StopTrowingThem.png"},
+        {"Suika Ibuki","Img/RealyShort.png"},
+        {"Wriggle Nightbug","Img/Its_a_Bug.png"},
+        {"Mystia Lorelei","Img/SheHasACookingGame.png"},
+        {"Keine Kamishirasawa","Img/AlsoHasAFunnyGame.png"},
+        {"Tewi Inaba","Img/Funny.png"},
+        {"Reisen Udongein Inaba","Img/Moon_Rabbit.png"},
+        {"Eirin Yagokoro","Img/ShadyDealer.png"},
+        {"Kaguya Houraisan","Img/MyPrincess.png"}
 
     };
 
