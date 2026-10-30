@@ -5,11 +5,12 @@
 #include <SDL3/SDL.h>
 #include <SDL3_image/SDL_image.h>
 
-#define NUM_CHARACTERS  31
+#define NUM_CHARACTERS  47
 
 typedef struct {
     const char *name;
     const char *png;
+    const char *info;
 } Character;
 
 int main(void)
@@ -37,29 +38,49 @@ int main(void)
         {"Alice Margatroid","Imgs/Aris.png"},
         {"Lily White","Imgs/Happy.png"},
         {"Lunasa Prismriver","Imgs/Prism.png"},
-        {"Merlin Prismriver","Img/Prism2.png"},
-        {"Lyrica Prismriver","Img/Lyrica.png"},
-        {"Youmu Konpaku","Img/SwordHappyShortOne.png"},
-        {"Yuyuko Saigyouji","Img/Eat.png"},
-        {"Ran Yakumo","Img/Fox.png"},
-        {"Yukari Yakumo","Img/StopTrowingThem.png"},
-        {"Suika Ibuki","Img/RealyShort.png"},
-        {"Wriggle Nightbug","Img/Its_a_Bug.png"},
-        {"Mystia Lorelei","Img/SheHasACookingGame.png"},
-        {"Keine Kamishirasawa","Img/AlsoHasAFunnyGame.png"},
-        {"Tewi Inaba","Img/Funny.png"},
-        {"Reisen Udongein Inaba","Img/Moon_Rabbit.png"},
-        {"Eirin Yagokoro","Img/ShadyDealer.png"},
-        {"Kaguya Houraisan","Img/MyPrincess.png"}
+        {"Merlin Prismriver","Imgs/Prism2.png"},
+        {"Lyrica Prismriver","Imgs/Lyrica.png"},
+        {"Youmu Konpaku","Imgs/SwordHappyShortOne.png"},
+        {"Yuyuko Saigyouji","Imgs/Eat.png"},
+        {"Ran Yakumo","Imgs/Fox.png"},
+        {"Yukari Yakumo","Imgs/StopTrowingThem.png"},
+        {"Suika Ibuki","Imgs/RealyShort.png"},
+        {"Wriggle Nightbug","Imgs/Its_a_Bug.png"},
+        {"Mystia Lorelei","Imgs/SheHasACookingGame.png"},
+        {"Keine Kamishirasawa","Imgs/AlsoHasAFunnyGame.png"},
+        {"Tewi Inaba","Imgs/Funny.png"},
+        {"Reisen Udongein Inaba","Imgs/Moon_Rabbit.png"},
+        {"Eirin Yagokoro","Imgs/ShadyDealer.png"},
+        {"Kaguya Houraisan","Imgs/MyPrincess.png"},//30
+        {"Aya Shameimaru","Imgs/CameraOne.png"}, 
+        {"Medicine Melancholy","Imgs/Small_Princess.png"},
+        {"Yuuka Kazami","Imgs/Flowers.png"},
+        {"Komachi Onozuka","Imgs/HmmmLazy.png"},
+        {"Eiki Shiki, Yamaxanadu","Imgs/SheBecameShort.png"},
+        {"Shizuha Aki","Imgs/leafs.png"},
+        {"Minoriko Aki","Imgs/Food.png"},
+        {"Hina Kagiyama","Imgs/MyPrincess.png"},
+        {"Nitori Kawashiro","Imgs/MyPrincess.png"},
+        {"Momiji Inubashiri","Imgs/MyPrincess.png"},
+        {"Sanae Kochiya","Imgs/MyPrincess.png"},
+        {"Kanako Yasaka","Imgs/MyPrincess.png"},
+        {"Suwako Moriya","Imgs/MyPrincess.png","Suwako Moriya is the original goddess of the Moriya Shrine that now officially belongs to Kanako Yasaka but in Suwako's words she handles most of the divine services while Kanako and the shrine maiden, Sanae Kochiya, handle the sales and the duties of gathering faith.Suwako first appeared as the Extra Stage boss of Mountain of Faith and also became a playable character, or possible opponent, in Touhou Hisoutensoku."},
+        {"Iku Nagae","Imgs/MyPrincess.png"}, 
+        {"Tenshi Hinanawi","Imgs/TheBestOne.png","Tenshi Hinanawi  is a celestial who is the Eldest Daughter  of the Hinanawi clan. She first appeared as the main antagonist and final possible opponent for most story scenarios in Scarlet Weather Rhapsody, as well as a playable character. She later became a playable character in the versus mode of Touhou Hisoutensoku and fully appeared again as a playable character, or possible opponent, in Antinomy of Common Flowers."},//44
+        {"Tenshi Hinanawi","Imgs/ShesOneOFMyFavs_So.png","Tenshi Hinanawi  is a celestial who is the Eldest Daughter  of the Hinanawi clan. She first appeared as the main antagonist and final possible opponent for most story scenarios in Scarlet Weather Rhapsody, as well as a playable character. She later became a playable character in the versus mode of Touhou Hisoutensoku and fully appeared again as a playable character, or possible opponent, in Antinomy of Common Flowers."},
+        {"Tenshi Hinanawi","Imgs/MoreTenshi.png","Tenshi Hinanawi  is a celestial who is the Eldest Daughter  of the Hinanawi clan. She first appeared as the main antagonist and final possible opponent for most story scenarios in Scarlet Weather Rhapsody, as well as a playable character. She later became a playable character in the versus mode of Touhou Hisoutensoku and fully appeared again as a playable character, or possible opponent, in Antinomy of Common Flowers."} //46
+
+        
+        
 
     };
 
     srand((unsigned int)time(NULL));
 
     int index = rand() % NUM_CHARACTERS;
-
     printf("Selected character: %s\n", chars[index].name);
     printf("Loading image: %s\n", chars[index].png);
+    printf("Info about them: %s\n",chars[index].info);
 
 
     SDL_Window *win = SDL_CreateWindow(

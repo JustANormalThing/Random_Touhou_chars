@@ -1,5 +1,5 @@
 ## About project
-This project generates a random touhou chars, with there png.
+This project generates a random touhou chars, with there png and info abo theam.
 
 ## Geting started
 Linux was not tested.
@@ -60,3 +60,10 @@ Houraisan Kaguya (Kaguya Hōraisan) - Touhou -  by myuutsuu
 
 Ibuki Suika (Suika Ibuki) - Touhou - Image by campagne
 
+Hinanawi Tenshi (Tenshi Hinanawi) - Touhou - Mobile Wallpaper by Aka Tonbo
+
+10 (ten) / 4 (shi) is Tenshi's day! Artist: むぎむぎ
+
+Hinanawi Tenshi (Tenshi Hinanawi) - Touhou - Image by Tsune
+
+Touhou wiki for info - https://en.touhouwiki.net/wiki/Touhou_Wiki
